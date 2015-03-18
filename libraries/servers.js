@@ -1,26 +1,26 @@
 /**
- * The MIT License (MIT)
- *
- * Copyright (c) 2015 Schmoopiie
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
+* The MIT License (MIT)
+*
+* Copyright (c) 2015 Schmoopiie
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+* THE SOFTWARE.
+*/
 
 var net         = require('net');
 
@@ -124,55 +124,62 @@ function probeServer(address, port, callback) {
 var serverList = {
     'chat': {
         80: [
-            '199.9.249.126',
-            '199.9.249.142',
-            '199.9.249.222',
-            '199.9.249.252',
-            '199.9.249.253',
-            '199.9.250.229',
-            '199.9.250.239',
-            '199.9.251.189',
-            '199.9.252.120',
-            '199.9.252.28',
-            '199.9.253.165'
+            '192.16.64.11',
+            '192.16.64.144',
+            '192.16.64.145',
+            '192.16.64.146',
+            '192.16.64.152',
+            '192.16.64.155',
+            '192.16.64.37',
+            '192.16.64.45',
+            '192.16.64.51',
+            '192.16.71.237',
+            '199.9.248.236',
+            '199.9.251.168'
         ],
         443: [
-            '199.9.249.126',
-            '199.9.249.142',
-            '199.9.249.222',
-            '199.9.249.252',
-            '199.9.249.253',
-            '199.9.250.229',
-            '199.9.250.239',
-            '199.9.251.189',
-            '199.9.252.120',
-            '199.9.252.28',
-            '199.9.253.165'
+            '192.16.64.11',
+            '192.16.64.144',
+            '192.16.64.145',
+            '192.16.64.146',
+            '192.16.64.152',
+            '192.16.64.155',
+            '192.16.64.37',
+            '192.16.64.45',
+            '192.16.64.51',
+            '192.16.71.237',
+            '199.9.248.236',
+            '199.9.251.168'
         ],
         6667: [
-            '199.9.249.126',
-            '199.9.249.142',
-            '199.9.249.222',
-            '199.9.249.252',
-            '199.9.249.253',
-            '199.9.250.229',
-            '199.9.250.239',
-            '199.9.251.189',
-            '199.9.252.120',
-            '199.9.252.28',
-            '199.9.253.165'
+            '192.16.64.11',
+            '192.16.64.144',
+            '192.16.64.145',
+            '192.16.64.146',
+            '192.16.64.152',
+            '192.16.64.155',
+            '192.16.64.37',
+            '192.16.64.45',
+            '192.16.64.51',
+            '192.16.71.237',
+            '199.9.248.236',
+            '199.9.251.168'
         ]
     },
     'events': {
         80: [
-            '199.9.250.117',
-            '199.9.251.213',
-            '199.9.252.26'
+            '192.16.64.143',
+            '192.16.64.150',
+            '192.16.71.221',
+            '192.16.71.236',
+            '199.9.252.54'
         ],
         443: [
-            '199.9.250.117',
-            '199.9.251.213',
-            '199.9.252.26'
+            '192.16.64.143',
+            '192.16.64.150',
+            '192.16.71.221',
+            '192.16.71.236',
+            '199.9.252.54'
         ]
     },
     'groups': {
