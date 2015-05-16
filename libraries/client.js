@@ -663,7 +663,7 @@ client.prototype.action = function(channel, message) {
             self.logger.action('[' + utils.addHash(channel).toLowerCase() + '] ' + self.myself + ': ' + message);
         }
         if (self.emitSelf && self.selfData[utils.addHash(channel).toLowerCase()]) {
-            self.emit('action', utils.addHash(channel).toLowerCase(), self.selfData[utils.addHash(channel).toLowerCase()], message);
+            self.emit('action', utils.addHash(channel).toLowerCase(), self.selfData[utils.addHash(channel).toLowerCase()], message, true);
         }
         deferred.resolve(true);
     } else { deferred.resolve(false); }
@@ -918,7 +918,7 @@ client.prototype.say = function(channel, message) {
                 self.logger.chat('[' + utils.addHash(channel).toLowerCase() + '] ' + self.myself + ': ' + message);
             }
             if (self.emitSelf && self.selfData[utils.addHash(channel).toLowerCase()]) {
-                self.emit('chat', utils.addHash(channel).toLowerCase(), self.selfData[utils.addHash(channel).toLowerCase()], message);
+                self.emit('chat', utils.addHash(channel).toLowerCase(), self.selfData[utils.addHash(channel).toLowerCase()], message, true);
             }
             deferred.resolve(true);
         } else {
