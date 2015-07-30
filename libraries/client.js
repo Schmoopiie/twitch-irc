@@ -468,7 +468,7 @@ function _handleTags(username, tags, cb) {
 
     if (tags['subscriber'] === '1') { self.userData.special.push('subscriber'); }
     if (tags['turbo'] === '1') { self.userData.special.push('turbo'); }
-    if (typeof tags['user_type'] === 'string') { self.userData.special.push(tags['user_type']); }
+    if (typeof tags['user-type'] === 'string') { self.userData.special.push(tags['user-type']); }
 
     if (typeof cb == "function") {
         return cb(self.userData);
