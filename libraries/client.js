@@ -208,7 +208,10 @@ client.prototype._handleMessage = function(message) {
             /* Received reconnection request from Twitch */
             case 'RECONNECT':
                 self.logger.dev('Received reconnection request from Twitch.');
-                self.fastReconnect();
+                /* fastReconnect is broken, use disconnect and connect instead */
+                // self.fastReconnect();
+                self.disconnect();
+                self.connect();
                 break;
 
             /* CLEARCHAT sent by the server */
@@ -502,7 +505,7 @@ client.prototype._fastReconnectMessage = function(message) {
     }
 
     // Handling messages from tmi.twitch.tv
-    else if (message.prefix === 'tmi.twitch.tv') {
+    else if (message.prefix.isServer) {
         switch(message.command) {
             /* Received MOTD from server, it means that we are connected */
             case '372':
