@@ -257,8 +257,9 @@ var getServer = function getServer(client, type, server, port, cb) {
                 cb(server + ':' + serverPort);
             }
         });
+    } else {
+        return cb(serverAddress + ':' + serverPort);
     }
-    return cb(serverAddress + ':' + serverPort);
 };
 
 exports.getServer = getServer;
